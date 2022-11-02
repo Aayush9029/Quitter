@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C28B478E291090050091E49D /* QuitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B478D291090050091E49D /* QuitterApp.swift */; };
-		C28B4790291090050091E49D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B478F291090050091E49D /* ContentView.swift */; };
 		C28B4792291090060091E49D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28B4791291090060091E49D /* Assets.xcassets */; };
 		C28B4795291090060091E49D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28B4794291090060091E49D /* Preview Assets.xcassets */; };
-		C28B47A1291091190091E49D /* ProcessesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B47A0291091190091E49D /* ProcessesViewModel.swift */; };
-		C28B47A4291091410091E49D /* SingleProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B47A3291091410091E49D /* SingleProcess.swift */; };
+		C29A486A2911F89E0005455B /* SingleProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A48692911F89E0005455B /* SingleProcessView.swift */; };
+		C29A486C2911FA000005455B /* ProcessesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A486B2911FA000005455B /* ProcessesView.swift */; };
+		C2D0D11E291201D700280780 /* PillButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0D11D291201D700280780 /* PillButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C28B478A291090050091E49D /* Quitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28B478D291090050091E49D /* QuitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuitterApp.swift; sourceTree = "<group>"; };
-		C28B478F291090050091E49D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C28B4791291090060091E49D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28B4794291090060091E49D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C28B4796291090060091E49D /* Quitter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quitter.entitlements; sourceTree = "<group>"; };
-		C28B47A0291091190091E49D /* ProcessesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesViewModel.swift; sourceTree = "<group>"; };
-		C28B47A3291091410091E49D /* SingleProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleProcess.swift; sourceTree = "<group>"; };
+		C29A48692911F89E0005455B /* SingleProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleProcessView.swift; sourceTree = "<group>"; };
+		C29A486B2911FA000005455B /* ProcessesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesView.swift; sourceTree = "<group>"; };
+		C2D0D11D291201D700280780 /* PillButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +58,6 @@
 			children = (
 				C28B478D291090050091E49D /* QuitterApp.swift */,
 				C28B479D291090D50091E49D /* Views */,
-				C28B479C291090C80091E49D /* ViewModels */,
-				C28B47A2291091380091E49D /* Models */,
-				C28B479E291090DE0091E49D /* Extensions */,
 				C28B479F291090E60091E49D /* ViewModifiers */,
 				C28B4791291090060091E49D /* Assets.xcassets */,
 				C28B4796291090060091E49D /* Quitter.entitlements */,
@@ -77,42 +74,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C28B479C291090C80091E49D /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				C28B47A0291091190091E49D /* ProcessesViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		C28B479D291090D50091E49D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C28B478F291090050091E49D /* ContentView.swift */,
+				C29A486B2911FA000005455B /* ProcessesView.swift */,
+				C29A48692911F89E0005455B /* SingleProcessView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		C28B479E291090DE0091E49D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C28B479F291090E60091E49D /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				C2D0D11D291201D700280780 /* PillButtonModifier.swift */,
 			);
 			path = ViewModifiers;
-			sourceTree = "<group>";
-		};
-		C28B47A2291091380091E49D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C28B47A3291091410091E49D /* SingleProcess.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,10 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28B4790291090050091E49D /* ContentView.swift in Sources */,
-				C28B47A1291091190091E49D /* ProcessesViewModel.swift in Sources */,
+				C29A486C2911FA000005455B /* ProcessesView.swift in Sources */,
 				C28B478E291090050091E49D /* QuitterApp.swift in Sources */,
-				C28B47A4291091410091E49D /* SingleProcess.swift in Sources */,
+				C29A486A2911F89E0005455B /* SingleProcessView.swift in Sources */,
+				C2D0D11E291201D700280780 /* PillButtonModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
